@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.panel {
+  display: flex;
+  background-color: black;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  color: rgb(29, 29, 236);
+  padding-left: 140px;
+}
+
+.panel div {
+  box-sizing: border-box;
+  padding: 0 20px 0 10px;
+}
+
+.panel div:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.user-panel {
+  background-color: white;
+}
+.content {
+  width: 80%;
+  /* border: 1px solid red; */
+  position: relative;
+  margin: 0 auto;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+}
+
+.title {
+  height: 15%;
+  line-height: 80px;
+  /* border: 1px solid; */
+  padding-left: 20px;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+.content-table {
+  height: 85%;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.users-table {
+  display: grid;
+}
+
+.tableUser {
+  display: grid;
+  grid-template-columns: 3% 3% 10% 12% 17% 10% 13% 10% 7% 15%;
+}
+
+.tableUser div,
+.tableBlog div {
+  border: 1px solid rgb(50, 50, 223);
+  text-align: center;
+  min-height: 30px;
+  background-color: black;
+  color: white;
+  max-height: max-content;
+}
+
+.tableBlog {
+  display: grid;
+  grid-template-columns: 3% 3% 15% 45% 10% 9% 15%;
+}
+
+.div-page {
+  /* border: 1px solid blue; */
+  top: 20px;
+  height: 40px;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.page {
+  /* border: 1px solid red; */
+  position: relative;
+  top: 7px;
+  height: 25px;
+  display: flex;
+  line-height: 22px;
+  box-sizing: border-box;
+}
+
+.page-id {
+  /* border: 1px solid red; */
+  display: flex;
+  overflow: hidden;
+}
+.order {
+  border: 1px solid red;
+  height: 100%;
+  display: block;
+  width: 25px;
+  text-align: center;
+  margin: 0 3px;
+}
+.order:hover {
+  cursor: pointer;
+}
+.order a {
+  text-decoration: none;
+}
+.previos,
+.next {
+  width: 25px;
+  /* border: 1px solid blue; */
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 2px;
+  background-color: rgba(173, 166, 166, 0.901);
+}
+
+.previos i:hover {
+  color: red;
+}
+
+.next i:hover {
+  color: blue;
+}
+
+i:hover {
+  cursor: pointer;
+}
+.change {
+  color: yellow;
+  background-color: black;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 100%;
+  height: max-content;
+  word-wrap: break-word;
+}
